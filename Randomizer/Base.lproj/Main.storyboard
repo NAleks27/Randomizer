@@ -41,7 +41,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCx-oE-JbI">
-                                <rect key="frame" x="46" y="332" width="323" height="196"/>
+                                <rect key="frame" x="45.5" y="332" width="323" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="323" id="7b1-D9-MFv"/>
                                     <constraint firstAttribute="width" secondItem="uCx-oE-JbI" secondAttribute="height" multiplier="323:196" id="hj6-Xh-02w"/>
