@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         labelRandomNumber.backgroundColor = .black
         labelTextField.text = ""
         
-        }
+    }
     
     @IBAction func textFieldEditingChanged(_ sender: Any) {
         guard let x = labelTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
@@ -42,21 +42,21 @@ class ViewController: UIViewController {
     let randomNumber = Int.random(in: 1...200)
     
     @IBAction func pressBtn(_ sender: UIButton) {
-            let userNumber = Int(labelTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines))!
-            switch userNumber {
-            case let i where i == randomNumber:
-                labelTextResult.text = "Cупер, Вы угадали!"
-                labelRandomNumber.text = String(randomNumber)
-                labelRandomNumber.backgroundColor = .green
-            case let i where i > 200:
-                labelTextResult.text = "Вы ввели некорректное число. Ваше число должно быть в диапазоне от 0 до 20. Попробуйте снова"
-            case let i where i > randomNumber:
-                labelTextResult.text = "Ваше число больше загаданного"
-            case let i where i < randomNumber:
-                labelTextResult.text = "Ваше число меньше загаданного"
-            default:
-                labelTextResult.text = "Вы не угадали"
-            }
+        let userNumber = Int(labelTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines))!
+        switch userNumber {
+        case let i where i == randomNumber:
+            labelTextResult.text = "Cупер, Вы угадали!"
+            labelRandomNumber.text = String(randomNumber)
+            labelRandomNumber.backgroundColor = .green
+        case let i where i > 200:
+            labelTextResult.text = "Вы ввели некорректное число. Ваше число должно быть в диапазоне от 0 до 20. Попробуйте снова"
+        case let i where i > randomNumber:
+            labelTextResult.text = "Ваше число больше загаданного"
+        case let i where i < randomNumber:
+            labelTextResult.text = "Ваше число меньше загаданного"
+        default:
+            labelTextResult.text = "Вы не угадали"
+        }
         labelTextField.text = ""
     }
     
