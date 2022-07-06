@@ -3,4 +3,22 @@
    uuid = "240CC406-1458-4C41-91EA-133317B2AEEC"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C48F68AD-825F-4AB9-8E9B-AB623052A573"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../../../var/folders/6r/brl4qf2d7x116l8v9zxbcrbh0000gn/T/xcode/scm/1. Randomizer/5642410bef2db70ec17eb7552a4bfdfd90525487/Randomizer/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "updateValue(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

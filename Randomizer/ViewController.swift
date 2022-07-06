@@ -13,7 +13,7 @@ class ViewController: UIViewController {
         labelRandomNumber.text = "???"
         labelTextResult.text = "Компьютер случайным образом загадал число от 0 до 200. Попробуй его отгадать! Введи своё число и нажмите Check."
         buttonStatus.isEnabled = false
-        labelRandomNumber.backgroundColor = .black
+        labelRandomNumber.backgroundColor = .systemGray6
         labelTextField.text = ""
         
     }
@@ -35,11 +35,7 @@ class ViewController: UIViewController {
         } else { buttonStatus.isEnabled = true }
     }
     
-    @IBAction func updateValue(_ sender: Any) {
-        viewDidLoad()
-    }
-    
-    let randomNumber = Int.random(in: 1...200)
+    var randomNumber =  Int.random(in: 1...200)
     
     @IBAction func pressBtn(_ sender: UIButton) {
         let userNumber = Int(labelTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines))!
@@ -47,7 +43,8 @@ class ViewController: UIViewController {
         case let i where i == randomNumber:
             labelTextResult.text = "Cупер, Вы угадали!"
             labelRandomNumber.text = String(randomNumber)
-            labelRandomNumber.backgroundColor = .green
+            labelRandomNumber.backgroundColor = .systemGreen
+            buttonStatus.isEnabled = false
         case let i where i > 200:
             labelTextResult.text = "Вы ввели некорректное число. Ваше число должно быть в диапазоне от 0 до 20. Попробуйте снова"
         case let i where i > randomNumber:
@@ -60,10 +57,12 @@ class ViewController: UIViewController {
         labelTextField.text = ""
     }
     
+    @IBAction func presscube(_ sender: UIButton) {
+        viewDidLoad()
+        randomNumber = Int.random(in: 1...200)
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
 }
-
-
-
