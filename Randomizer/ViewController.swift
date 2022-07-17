@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             labelRandomNumber.backgroundColor = .systemGreen
             buttonStatus.isEnabled = false
         case let i where i > 200:
-            labelTextResult.text = "Вы ввели некорректное число. Ваше число должно быть в диапазоне от 0 до 20. Попробуйте снова"
+            labelTextResult.text = "Вы ввели некорректное число. Ваше число должно быть в диапазоне от 0 до 200. Попробуйте снова"
         case let i where i > randomNumber:
             labelTextResult.text = "Ваше число больше загаданного"
         case let i where i < randomNumber:
@@ -49,6 +49,7 @@ class ViewController: UIViewController {
             labelTextResult.text = "Вы не угадали"
         }
         labelTextField.text = ""
+        buttonStatus.isEnabled = false
     }
     
     @IBAction func presscube(_ sender: UIButton) {
