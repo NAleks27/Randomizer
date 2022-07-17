@@ -29,12 +29,6 @@ class ViewController: UIViewController {
         buttonStatus.isEnabled = true
     }
     
-    @IBAction func textFieldValueChanged(_ sender: Any) {
-        if labelTextField.text?.isEmpty == true {
-            buttonStatus.isEnabled = false
-        } else { buttonStatus.isEnabled = true }
-    }
-    
     var randomNumber =  Int.random(in: 1...200)
     
     @IBAction func pressBtn(_ sender: UIButton) {
